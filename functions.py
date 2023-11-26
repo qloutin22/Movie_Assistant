@@ -6,18 +6,19 @@ def print_every_movie_title (movie_list):
     print(movies["title"])
 print_every_movie_title(movies)
 
+
 #A function that returns the length of the description 
-def get_movie_description_length(movie):
-    description = movie.get('description', '')  
-    return len(description)
-description_length = get_movie_description_length(movies[0])
-print({description_length})
+def get_movie_description_length_1(movie):
+    #description = movie.get('description', '')  
+    #return len(description)
+#description_length = get_movie_description_length_1(movies[0])
+#print({description_length})
 
 #Returns the length of each movie
-def get_movie_description_length (movie_length):
-  for movies in movie_length:
-    print(len(movies["description"]))
-get_movie_description_length (movies)
+def get_movie_description_length_2 (movie_length):
+ for movies in movie_length:
+  #print(len(movies["description"]))
+get_movie_description_length_2 (movies)
 
 #Returns the length of the movie description
 def get_movie_description_length (movies):
@@ -53,10 +54,10 @@ def get_user_genre_choice (genre):
 
 
 #show the movies in a selected genre
-genre = get_user_genre_choice (get_unique_genres)
-movie_list = get_movies_in_genre(genre)
-for index, movie in enumerate(movie_list, start=1):
-    print(f"{index}: {movie}")
+#genre = get_user_genre_choice (get_unique_genres)
+#movie_list = get_movies_in_genre(genre)
+#for index, movie in enumerate(movie_list, start=1):
+  #print(f"{index}: {movie}")
 
 #Prints genres 
 def get_movie_by_index ():
@@ -69,7 +70,7 @@ def get_movie_by_index ():
   selected_movie_index = input('movie index?')
   print(f"{selected_movie_index}: {movie}")
   return
-get_movie_by_index ()
+#get_movie_by_index ()
 
 
 # The "get_user_genre_choice" function raises an error when you use a genre that is not in the dataset
@@ -82,7 +83,7 @@ def get_user_genre_choice():
         else:
             print("Invalid genre choice. Please choose from the following genres:")
             print(valid_genres)
-get_user_genre_choice()
+#get_user_genre_choice()
 
 #The "get_user_genre_choice" function raises a ValueError exception when you use a genre that is not in the datase
 def get_user_genre_choice():

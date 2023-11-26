@@ -1,4 +1,4 @@
-#This file contains the movie list data base. 
+#This file contains the movie list data base. It was extracted from a json file
 
 movies = [{'title': 'The Shawshank Redemption',
   'description': 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
